@@ -1,0 +1,114 @@
+:root {
+    /* Primary colors */
+    --primary-pale-blue: hsl(225, 100%, 94%);
+    --primary-bright-blue: hsl(245, 75%, 52%);
+
+    /* Neutral colors */
+    --neutral-very-pale-blue: hsl(225, 100%, 98%);
+    --neutral-desaturated-blue: hsl(224, 23%, 55%);
+    --neutral-dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    min-height: 100vh;
+    font-size: 1.6rem;
+    font-family: 'Red Hat Display', sans-serif;
+    /* Font Weights: 500, 700, 900 */
+    background-color: var(--primary-pale-blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    width: 85vw;
+    margin: 8rem 0;
+    border-radius: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+main > * {
+    width: 85%;
+}
+
+#illustration-hero-img {
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    margin-bottom: 3.5rem;
+}
+
+h3 {
+    font-weight: 900;
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+}
+
+.main-text {
+    width: 80%;
+    margin-bottom: 2.5rem;
+    color: var(--neutral-desaturated-blue);
+}
+
+.annual-plan {
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--neutral-very-pale-blue);
+    padding: 2rem 0;
+}
+
+.annual-plan div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 11rem;
+}  
+
+.annual-plan-text {
+    font-weight: 900;
+}
+
+.annual-plan-price {
+    color: var(--neutral-desaturated-blue);
+}
+
+.music-icon {
+    margin-right: 2rem;
+}
+
+.annual-plan-change {
+    color: var(--primary-bright-blue);
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/* - finish all buttons
+- check how code looks on mobile screen
+- media queries */
