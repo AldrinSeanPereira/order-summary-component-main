@@ -33,7 +33,7 @@ body {
 }
 
 main {
-    width: 85vw;
+    width: 38rem;
     margin: 8rem 0;
     border-radius: 20px;
     background-color: white;
@@ -72,18 +72,19 @@ h3 {
     justify-content: center;
     align-items: center;
     background-color: var(--neutral-very-pale-blue);
-    padding: 2rem 0;
+    padding: 1.5rem 0;
 }
 
 .annual-plan div {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-right: 11rem;
+    margin-right: 7rem;
 }  
 
 .annual-plan-text {
     font-weight: 900;
+    margin-bottom: 0.1rem;
 }
 
 .annual-plan-price {
