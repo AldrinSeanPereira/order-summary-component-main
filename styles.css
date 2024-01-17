@@ -33,7 +33,7 @@ body {
 }
 
 main {
-    width: 38rem;
+    width: 85%;
     margin: 8rem 0;
     border-radius: 20px;
     background-color: white;
@@ -101,6 +101,10 @@ h3 {
     font-weight: 700;
 }
 
+/* - finish all buttons
+- check how code looks on mobile screen
+- media queries */
+
 .attribution {
     font-size: 11px;
     text-align: center;
@@ -109,7 +113,3 @@ h3 {
 .attribution a {
     color: hsl(228, 45%, 44%);
 }
-
-/* - finish all buttons
-- check how code looks on mobile screen
-- media queries */
