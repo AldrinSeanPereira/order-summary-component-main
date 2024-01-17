@@ -116,6 +116,7 @@ h3 {
 - media queries */
 
 button {
+    border: none;
     border-radius: 11px;
     font-family: 'Red Hat Display', sans-serif;
     font-size: 1.4rem;
@@ -126,13 +127,12 @@ button {
     background-color: var(--primary-bright-blue);
     color: var(--color-white);
     padding: 1.4rem 0;
-    margin-bottom: 2.5rem;
-    box-shadow:  0 20px 10px 1px var(--primary-pale-blue);
+    margin-bottom: 2rem;
+    box-shadow:  0 20px 10px 0px var(--primary-pale-blue);
     letter-spacing: 1px;
 }
 
 .button-cancel {
-    border: none;
     margin-bottom: 4rem;
     color: var(--neutral-desaturated-blue);
     background-color: var(--color-white);
