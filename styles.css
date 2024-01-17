@@ -10,6 +10,8 @@
 
     /* other colors */
     --color-white: white;
+    --change-link-active: rgba(46, 0, 174, 0.606);
+    --button-proceed-active: rgba(91, 47, 212, 0.73);
 }
 
 * {
@@ -111,9 +113,10 @@ h3 {
     font-weight: 900;
 }
 
-/* - finish all buttons
-- check how code looks on mobile screen
-- media queries */
+.annual-plan-change:active {
+    color: var(--change-link-active);
+    text-decoration: none;
+}
 
 button {
     border: none;
@@ -127,15 +130,23 @@ button {
     background-color: var(--primary-bright-blue);
     color: var(--color-white);
     padding: 1.4rem 0;
-    margin-bottom: 2rem;
-    box-shadow:  0 20px 10px 0px var(--primary-pale-blue);
+    margin-bottom: 2.5rem;
+    box-shadow:  0 18px 20px 0px var(--primary-pale-blue);
     letter-spacing: 1px;
+}
+
+.button-proceed:active {
+    background-color: var(--button-proceed-active);
 }
 
 .button-cancel {
     margin-bottom: 4rem;
     color: var(--neutral-desaturated-blue);
     background-color: var(--color-white);
+}
+
+.button-cancel:active {
+    color: var(--neutral-dark-blue);
 }
 
 .attribution {
@@ -148,3 +159,10 @@ button {
 .attribution a {
     color: hsl(228, 45%, 44%);
 }
+
+/*
+- check how code looks on mobile screen
+- media queries 
+*/
+
+/* ----------------------media queries----------------------------- */
