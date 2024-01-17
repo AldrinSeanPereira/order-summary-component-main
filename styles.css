@@ -7,6 +7,9 @@
     --neutral-very-pale-blue: hsl(225, 100%, 98%);
     --neutral-desaturated-blue: hsl(224, 23%, 55%);
     --neutral-dark-blue: hsl(223, 47%, 23%);
+
+    /* other colors */
+    --color-white: white;
 }
 
 * {
@@ -20,28 +23,36 @@ html {
     font-size: 10px;
 }
 
+body,
+main,
+.annual-plan,
+.annual-plan div {
+    display: flex;
+}
+
+body,
+main {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 body {
     min-height: 100vh;
     font-size: 1.6rem;
     font-family: 'Red Hat Display', sans-serif;
     /* Font Weights: 500, 700, 900 */
     background-color: var(--primary-pale-blue);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    position: relative;
 }
 
 main {
     width: 85%;
-    margin: 8rem 0;
+    margin: 6rem 0;
     border-radius: 20px;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    background-color: var(--color-white);
     text-align: center;
+    box-shadow: 0 30px 60px -30px var(--neutral-dark-blue);
 }
 
 main > * {
@@ -61,22 +72,20 @@ h3 {
 }
 
 .main-text {
-    width: 80%;
     margin-bottom: 2.5rem;
     color: var(--neutral-desaturated-blue);
 }
 
 .annual-plan {
     border-radius: 15px;
-    display: flex;
     justify-content: center;
     align-items: center;
     background-color: var(--neutral-very-pale-blue);
     padding: 1.5rem 0;
+    margin-bottom: 2rem;
 }
 
 .annual-plan div {
-    display: flex;
     flex-direction: column;
     justify-content: center;
     margin-right: 7rem;
@@ -105,9 +114,33 @@ h3 {
 - check how code looks on mobile screen
 - media queries */
 
+button {
+    border-radius: 10px;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 900;
+}
+
+.button-proceed {
+    background-color: var(--primary-bright-blue);
+    color: var(--color-white);
+    padding: 1.4rem 0;
+    margin-bottom: 2.5rem;
+    box-shadow:  0 20px 10px 1px var(--primary-pale-blue);
+}
+
+.button-cancel {
+    border: none;
+    margin-bottom: 4rem;
+    color: var(--neutral-desaturated-blue);
+    background-color: var(--color-white);
+}
+
 .attribution {
     font-size: 11px;
     text-align: center;
+    position: absolute;
+    bottom: 5px;
 }
 
 .attribution a {
